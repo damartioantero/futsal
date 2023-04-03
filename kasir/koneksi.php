@@ -4,7 +4,7 @@ class database {
     var $name = 'root';
     var $pw = '';
     var $db = 'db_futsal';
-
+    //koneksi
     function construct(){
         $koneksi = mysqli_connect($this->host, $this->name,$this->pw,$this->db);
         mysqli_select_db($koneksi, $this->db);
